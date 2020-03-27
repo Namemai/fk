@@ -22,7 +22,7 @@ import json, requests, LineService
 from thrift.transport import THttpClient
 
 botStart = time.time()
-cl = LINE("tokenmu")
+cl = LINE()
 #cl = LINE("YOUR TOKEN")
 #cl = LINE("Email","Password")
 
@@ -65,7 +65,7 @@ settings = {
     "autoLeave": False,
     "autoRead": False,
     "lang":"JP",
-    "commentPost": "CANNIBAL BOT HADIR BUAT LIKE STATUS KAMU \n Add my owner ID http://line.me/ti/p/~aryopandelaki",
+    "commentPost": "BOT LIKE  \n Add my owner ID http://line.me/ti/p/~mai06555mai",
     "detectMention": True,
     "autoResponMessage": "Ngapain tag gua woy",
     "responsticker": False,
@@ -332,7 +332,7 @@ def sendTemplates(to, data):
 def sendTextTemplate(to, text):
     data = {
             "type": "flex",
-            "altText": "CANNIBAL",
+            "altText": "mai",
             "contents": {
   "styles": {
     "body": {
@@ -375,7 +375,7 @@ def sendTextTemplate(to, text):
 def sendTextTemplateMaster(to, text):
     data = {
             "type": "flex",
-            "altText": "CANNIBAL",
+            "altText": "mai",
             "contents": {
   "type": "bubble",
   "body": {
@@ -433,8 +433,8 @@ def sendTextTemplateMaster(to, text):
               "height": "sm",
               "action": {
                   "type": "uri",
-                  "label": "CANNIBAL",
-                  "uri": "http://line.me/ti/p/~aryopandelaki"
+                  "label": "mai",
+                  "uri": "http://line.me/ti/p/~mai06555mai"
               }
           }, {
               "flex": 3,
@@ -445,8 +445,8 @@ def sendTextTemplateMaster(to, text):
               "height": "sm",
               "action": {
                   "type": "uri",
-                  "label": "CREATOR",
-                  "uri": "http://line.me/ti/p/~aryopandelaki"
+                  "label": "mai",
+                  "uri": "http://line.me/ti/p/~mai06555mai"
               }
           }]
       }]
@@ -469,7 +469,7 @@ def sendStickerTemplate(to, text):
                                   "size": "full", 
                                   "action": {
                                       "type": "uri",
-                                      "uri": "http://line.me/ti/p/~aryopandelaki"
+                                      "uri": "http://line.me/ti/p/~mai06555mai"
            }                                                
  }
 ]
@@ -485,7 +485,7 @@ def clBot(op):
         if op.type == 5:
             print ("[ 5 ] NOTIFIED ADD CONTACT")
             if settings["autoAdd"] == True:
-                cl.sendMessage(op.param1, "Halo {} terimakasih telah menambahkan saya sebagai teman :D".format(str(cl.getContact(op.param1).displayName)))
+                cl.sendMessage(op.param1, "ออโต้บล็อค {} กรุนารอผมมา :D".format(str(cl.getContact(op.param1).displayName)))
         if op.type == 13:
             print ("[ 13 ] NOTIFIED INVITE GROUP")
             group = cl.getGroup(op.param1)
@@ -537,7 +537,7 @@ def clBot(op):
                 "contents": [
                   {
                     "type": "text",
-                    "text": "CANNIBAL",
+                    "text": "mai",
                     "size": "xl",
                     "wrap": True,
                     "weight": "bold",
@@ -631,7 +631,7 @@ def clBot(op):
         "color": "#FFFF00",
         "action": {
           "type": "uri",
-          "uri": "http://line.me/ti/p/~aryopandelaki",
+          "uri": "http://line.me/ti/p/~mai06555mai",
         },
         "align": "center"
       },
@@ -648,7 +648,7 @@ def clBot(op):
         "color": "#FFFF00",
         "action": {
           "type": "uri",
-          "uri": "http://line.me/ti/p/~aryopandelaki"
+          "uri": "http://line.me/ti/p/~mai06555mai"
         },
         "align": "center"
       },
@@ -676,7 +676,7 @@ def clBot(op):
                 "contents": [
                   {
                     "type": "text",
-                    "text": "CANNIBAL",
+                    "text": "mai",
                     "size": "xl",
                     "wrap": True,
                     "weight": "bold",
@@ -770,7 +770,7 @@ def clBot(op):
         "color": "#FFFF00",
         "action": {
           "type": "uri",
-          "uri": "http://line.me/ti/p/~aryopandelaki",
+          "uri": "http://line.me/ti/p/~mai06555mai",
         },
         "align": "center"
       },
@@ -787,7 +787,7 @@ def clBot(op):
         "color": "#FFFF00",
         "action": {
           "type": "uri",
-          "uri": "http://line.me/ti/p/~aryopandelaki"
+          "uri": "http://line.me/ti/p/~mai06555mai"
         },
         "align": "center"
       },
@@ -815,7 +815,7 @@ def clBot(op):
                 "contents": [
                   {
                     "type": "text",
-                    "text": "CANNIBAL",
+                    "text": "mai",
                     "size": "xl",
                     "wrap": True,
                     "weight": "bold",
@@ -902,14 +902,14 @@ def clBot(op):
         "contents": [
           {
             "type": "text",
-        "text": "CANNIBAL",
+        "text": "mai",
         "size": "xl",
         "wrap": True,
         "weight": "bold",
         "color": "#FFFF00",
         "action": {
           "type": "uri",
-          "uri": "http://line.me/ti/p/~aryopandelaki",
+          "uri": "http://line.me/ti/p/~mai06555mai",
         },
         "align": "center"
       },
@@ -926,7 +926,7 @@ def clBot(op):
         "color": "#FFFF00",
         "action": {
           "type": "uri",
-          "uri": "http://line.me/ti/p/~aryopandelaki"
+          "uri": "http://line.me/ti/p/~mai06555mai"
         },
         "align": "center"
       },
@@ -954,7 +954,7 @@ def clBot(op):
                 "contents": [
                   {
                     "type": "text",
-                    "text": "CANNIBAL",
+                    "text": "mai",
                     "size": "xl",
                     "wrap": True,
                     "weight": "bold",
@@ -1041,14 +1041,14 @@ def clBot(op):
         "contents": [
           {
             "type": "text",
-        "text": "CANNIBAL",
+        "text": "mai",
         "size": "xl",
         "wrap": True,
         "weight": "bold",
         "color": "#FFFF00",
         "action": {
           "type": "uri",
-          "uri": "http://line.me/ti/p/~aryopandelaki",
+          "uri": "http://line.me/ti/p/~mai06555mai",
         },
         "align": "center"
       },
@@ -1065,7 +1065,7 @@ def clBot(op):
         "color": "#FFFF00",
         "action": {
           "type": "uri",
-          "uri": "http://line.me/ti/p/~aryopandelaki"
+          "uri": "http://line.me/ti/p/~mai06555mai"
         },
         "align": "center"
       },
@@ -1093,7 +1093,7 @@ def clBot(op):
                 "contents": [
                   {
                     "type": "text",
-                    "text": "CANNIBAL",
+                    "text": "mai",
                     "size": "xl",
                     "wrap": True,
                     "weight": "bold",
@@ -1180,14 +1180,14 @@ def clBot(op):
         "contents": [
           {
             "type": "text",
-        "text": "CANNIBAL",
+        "text": "mai",
         "size": "xl",
         "wrap": True,
         "weight": "bold",
         "color": "#FFFF00",
         "action": {
           "type": "uri",
-          "uri": "http://line.me/ti/p/~aryopandelaki",
+          "uri": "http://line.me/ti/p/~mai06555mai",
         },
         "align": "center"
       },
@@ -1204,7 +1204,7 @@ def clBot(op):
         "color": "#FFFF00",
         "action": {
           "type": "uri",
-          "uri": "http://line.me/ti/p/~aryopandelaki"
+          "uri": "http://line.me/ti/p/~mai06555mai"
         },
         "align": "center"
       },
@@ -1232,7 +1232,7 @@ def clBot(op):
                 "contents": [
                   {
                     "type": "text",
-                    "text": "CANNIBAL",
+                    "text": "mai",
                     "size": "xl",
                     "wrap": True,
                     "weight": "bold",
@@ -1319,14 +1319,14 @@ def clBot(op):
         "contents": [
           {
             "type": "text",
-        "text": "CANNIBAL",
+        "text": "mai",
         "size": "xl",
         "wrap": True,
         "weight": "bold",
         "color": "#FFFF00",
         "action": {
           "type": "uri",
-          "uri": "http://line.me/ti/p/~aryopandelaki",
+          "uri": "http://line.me/ti/p/~mai06555mai",
         },
         "align": "center"
       },
@@ -1343,7 +1343,7 @@ def clBot(op):
         "color": "#FFFF00",
         "action": {
           "type": "uri",
-          "uri": "http://line.me/ti/p/~aryopandelaki"
+          "uri": "http://line.me/ti/p/~mai06555mai"
         },
         "align": "center"
       },
@@ -1429,24 +1429,22 @@ def clBot(op):
                                                         "size": "full", 
                                                         "action": {
                                                             "type": "uri",
-                                                            "uri": "http://line.me/ti/p/~aryopandelaki"
+                                                            "uri": "http://line.me/ti/p/~mai06555mai"
                                  }                                                
                        }
                       ]
                                                 }
                                             }
                                     cl.postTemplate(to, data)
-                elif text.lower() == 'dell':
+                elif text.lower() == 'ลบแชท':
                     cl.removeAllMessages(op.param2)
                     sendTextTemplate(to, "Menghapus Chat")
-                elif text.lower() == 'speed':
+                elif text.lower() == 'sp':
                     start = time.time()
                     cl.sendMessage(to, "⭐")
-                    cl.sendMessage(to, "⭐⭐")
-                    cl.sendMessage(to, "⭐⭐⭐")
                     elapsed_time = time.time() - start
                     sendTextTemplate(to,format(str(elapsed_time)))
-                elif text.lower() == 'restart':
+                elif text.lower() == 'รีบอท':
                     sendTextTemplate(to, "Akan di restart...")
                     restartBot()
                 elif text.lower() == 'runtime':
@@ -1457,7 +1455,7 @@ def clBot(op):
                 elif text.lower() == 'about':
                     try:
                         arr = []
-                        owner = "ua53ce352dcd603a9ffb6d2f0ec267d71"
+                        owner = "uc66e45201d1612eb4ce7b3a86bac4685"
                         creator = cl.getContact(owner)
                         contact = cl.getContact(clMID)
                         grouplist = cl.getGroupIdsJoined()
@@ -1478,7 +1476,7 @@ def clBot(op):
                         sendTextTemplateMaster(to, str(ret_))
                     except Exception as e:
                         cl.sendMessage(msg.to, str(e))
-                elif text.lower() == 'status':
+                elif text.lower() == 'เชค':
                     try:
                         ret_ = "━━━━┅═❉ই۝ई❉═┅━━━━\n          ❇    STATUS    ❇\n╭━━━━━━━━━━━━━━━━\n║╭❉ 🔵[ON]|[OFF]🔴 ❇\n║┝───────────────"
                         if settings["autoAdd"] == True: ret_ += "\n║│🔵 Auto Add [ON]"
@@ -1493,7 +1491,7 @@ def clBot(op):
                         else: ret_ += "\n║│🔴 Notif [OFF]"
                         if settings["detectMention"] == True: ret_ += "\n║│🔵 Detect Mention [ON]"
                         else: ret_ += "\n║│🔴 Detect Mention [OFF]"
-                        ret_ += "\n║┝───────────────\n║╰❉      CANNIBAL       ❇\n╰━━━━━━━━━━━━━━━━\n━━━━┅═❉ই۝ई❉═┅━━━━"
+                        ret_ += "\n║┝───────────────\n║╰❉      m       ❇\n╰━━━━━━━━━━━━━━━━\n━━━━┅═❉ই۝ई❉═┅━━━━"
                         sendTextTemplateMaster(to, str(ret_))
                     except Exception as e:
                         cl.sendMessage(msg.to, str(e))
@@ -1540,7 +1538,7 @@ def clBot(op):
                     settings["datectMention"] = False
                     sendTextTemplate(to, "menonaktifkan Detect Mention")
 
-                elif text.lower() == 'allstatus on':
+                elif text.lower() == 'all on':
                     settings["notifikasi"] = True
                     settings["autoAdd"] = True
                     settings["autoJoin"] = True
@@ -1549,7 +1547,7 @@ def clBot(op):
                     settings["datectMention"] = True
                     sendTextTemplate(to, "Allstatus bot mode on")
 
-                elif text.lower() == 'allstatus off':
+                elif text.lower() == 'all off':
                     settings["notifikasi"] = False
                     settings["autoAdd"] = False
                     settings["autoJoin"] = False
@@ -1558,15 +1556,15 @@ def clBot(op):
                     settings["datectMention"] = False
                     sendTextTemplate(to, "Allstatus bot mode on")
 
-                elif text.lower() == 'mycontact':
+                elif text.lower() == 'มี':
                     sendMessageWithMention(to, clMID)
                     cl.sendContact(to, clMID)
-                elif text.lower() == 'mymid':
+                elif text.lower() == 'มิด':
                     cl.sendMessage(msg.to,"[MID]\n" +  clMID)
                 elif text.lower() == 'myname':
                     me = cl.getContact(clMID)
                     cl.sendMessage(msg.to,"[DisplayName]\n" + me.displayName)
-                elif text.lower() == 'mybio':
+                elif text.lower() == 'ตัส':
                     me = cl.getContact(clMID)
                     sendTextTemplate(msg.to,"[StatusMessage]\n" + me.statusMessage)
                 elif text.lower() == 'mypicture':
@@ -1864,7 +1862,7 @@ def clBot(op):
                         if settings["mimic"]["status"] == True:
                             settings["mimic"]["status"] = False
                             sendTextTemplate(msg.to,"Reply Message off")
-                elif "youtube" in msg.text.lower():
+                elif "ยูทูป" in msg.text.lower():
                     if msg.toType == 2:
                             try:
                                 sep = msg.text.split(" ")
@@ -2188,7 +2186,7 @@ def clBot(op):
                                                                 {
                                                                     "type": "uri",
                                                                     "label": "CREATOR",
-                                                                    "uri": "http://line.me/ti/p/~aryopandelaki",
+                                                                    "uri": "http://line.me/ti/p/~mai06555mai",
                                                                 }
                                                             ]
                                                         }
@@ -2472,7 +2470,7 @@ def clBot(op):
                             ticket = cl.reissueGroupTicket(to)
                             cl.sendMessage(to, "[ Group Ticket ]\nhttps://line.me/R/ti/g/{}".format(str(ticket)))
                         else:
-                            cl.sendMessage(to, "Grup qr tidak terbuka silahkan buka terlebih dahulu dengan perintah {}openqr".format(str(settings["keyCommand"])))
+                            cl.sendMessage(to, "Grup qr {}openqr".format(str(settings["keyCommand"])))
                 elif text.lower() == 'groupticket on':
                     if msg.toType == 2:
                         group = cl.getGroup(to)
@@ -2556,7 +2554,7 @@ def clBot(op):
                        settings["notifikasi"] = False
                        if settings["lang"] == "JP":
                            sendTextTemplate(msg.to,"notif mode off")
-                elif text.lower() == 'tag':
+                elif text.lower() == 'แทค':
                             if msg.toType == 0:
                                 sendMention(to, to, "", "")
                             elif msg.toType == 2:
@@ -2935,7 +2933,7 @@ def clBot(op):
               "action": {
                   "type": "uri",
                   "label": "CREATOR",
-                  "uri": "http://line.me/ti/p/~aryopandelaki"
+                  "uri": "http://line.me/ti/p/~mai06555mai"
               }
           }]
       }]
@@ -2956,7 +2954,7 @@ def clBot(op):
              image = "http://dl.profile.line.naver.jp/" + contact.pictureStatus
              data = {
                                 "type": "flex",
-                                "altText": "CANNIBAL",
+                                "altText": "mai",
                                 "contents": {
   "styles": {
     "body": {
@@ -3011,8 +3009,8 @@ def clBot(op):
               "height": "sm",
               "action": {
                   "type": "uri",
-                  "label": "CREATOR",
-                  "uri": "http://line.me/ti/p/~aryopandelaki"
+                  "label": "mai",
+                  "uri": "http://line.me/ti/p/~mai06555mai"
               }
           }]
       }]
