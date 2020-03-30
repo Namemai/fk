@@ -25,31 +25,31 @@ botStart = time.time()
 msg_dict = {}
 msg_dict1 = {}
 #==============[ token 1 ]==============#
-cl = LINE("06555mai@gmail.com","mai06555mai")
+cl = LINE()
 cl.log("Auth Token : " + str(cl.authToken))
 cl.log("Timeline Token : " + str(cl.tl.channelAccessToken))
 
-ki = LINE("hhm34248@eoopy.com","mai06555mai")
+ki = LINE()
 ki.log("Auth Token : " + str(ki.authToken))
 ki.log("Timeline Token : " + str(ki.tl.channelAccessToken))
 
-kk = LINE("lad34018@eoopy.com","mai06555mai")
+kk = LINE()
 kk.log("Auth Token : " + str(kk.authToken))
 kk.log("Timeline Token : " + str(kk.tl.channelAccessToken))
 
-kc = LINE("tvm12228@zzrgg.com","mai06555mai")
+kc = LINE()
 kc.log("Auth Token : " + str(kc.authToken))
 kc.log("Timeline Token : " + str(kc.tl.channelAccessToken))
 
-ko = LINE("sps52529@eoopy.com","mai06555mai")
+ko = LINE()
 ko.log("Auth Token : " + str(ko.authToken))
 ko.log("Timeline Token : " + str(ko.tl.channelAccessToken))
 
-jk = LINE("lnw89314@bcaoo.com","mai06555mai")
+jk = LINE()
 jk.log("Auth Token : " + str(jk.authToken))
 jk.log("Timeline Token : " + str(jk.tl.channelAccessToken))
 
-sw = LINE("rdd49652@zzrgg.com","mai06555mai")
+sw = LINE()
 sw.log("Auth Token : " + str(sw.authToken))
 sw.log("Timeline Token : " + str(sw.tl.channelAccessToken))
 #==============[●●●●●●]==============#
